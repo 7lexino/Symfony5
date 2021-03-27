@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>{% block title %}{% endblock %}</title>
+
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin:0px;
+			}
+			body{
+				font-family: Arial;
+				font-size: 14;
+				background-color: #F4F4F4;
+			}
+
+			#cabecera{
+				width: 100%;
+				background-color: #F9245E;
+				border-bottom: 1px solid #000;
+				margin: auto;
+				padding: 10px;
+			}
+
+			#contenido{
+				width: 800px;
+				background-color: #FFF;
+				margin-top: 50px;
+				margin-bottom: 50px;
+				padding: 10px;
+				margin: auto;
+			}
+
+			#pie{
+				width: 100%;
+				background-color: #F9245E;
+				border-top: 1px solid #000;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="global">
+			<div id="cabecera">
+				<h1>Logotipo</h1>
+				<p>Con Symfony 5</p>
+			</div>
+			<div id="contenido">
+				{% block contenido %}
+					Este es el contenido por defecto
+				{% endblock %}
+			</div>
+			<div id="pie">
+				<p>Aviso Legal</p>
+			</div>
+		</div>
+	</body>
+</html>

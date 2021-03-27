@@ -1,0 +1,15 @@
+{% extends 'universal.html.twig' %}
+
+{% block title %} Título de las noticias {% endblock %}
+
+{% block contenido %}
+	<h1>Sección de noticias</h1>
+
+	<ul>
+		{% for n in noticiasPack %}
+			<li>
+				<a href=" {{ url('noticiaSingle', { id: n.id }) }} ">{{ n.titulo }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+{% endblock %}

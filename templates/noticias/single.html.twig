@@ -1,0 +1,9 @@
+{% extends 'universal.html.twig' %}
+
+{% block title %} Symfony5 :: Noticia {{ idNoticia }} {% endblock %}
+
+{% block contenido %}
+	<h1>Noticia #{{ idNoticia }}</h1>
+
+	<a href="{{ url('noticias') }}">Volver</a>
+{% endblock %}
