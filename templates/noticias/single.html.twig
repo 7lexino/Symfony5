@@ -1,6 +1,8 @@
 {% extends 'universal.html.twig' %}
 
 {% block title %} Symfony5 :: Noticia {{ idNoticia }} {% endblock %}
+{% block js %}<script type="text/javascript" src="{{ asset('static/js/noticia_single.js') }}"></script>{% endblock %}
+
 
 {% block contenido %}
 	<h1>Noticia #{{ idNoticia }}</h1>
